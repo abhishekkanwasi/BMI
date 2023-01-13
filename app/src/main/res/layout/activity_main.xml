@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/llMain"
+    android:background="#000"
+
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        app:srcCompat="@drawable/bmi"
+        android:outlineAmbientShadowColor="#AF1717"
+        />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/hint_wt"
+    android:id="@+id/edtWeight"
+    android:inputType="number"
+    android:textColor="#16F1DC"
+    android:textColorHighlight="#ED1717"/>
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/hint_htF"
+    android:id="@+id/edtFeet"
+    android:textColor="#16F1DC"
+    android:textColorHighlight="#ED1717"
+    android:inputType="number"/>
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/hint_htI"
+    android:id="@+id/edtInches"
+    android:textColor="#16F1DC"
+    android:textColorHighlight="#ED1717"
+    android:inputType="number"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnCalculate"
+    android:text="Calculate"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:textColorHighlight="#15F61E"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:id="@+id/txtResult"
+    android:text="RESULT WILL BE SHOWN HERE"
+    android:layout_margin="10dp"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textColor="#E25CFA"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:layout_margin="10dp"
+    android:gravity="right"
+    android:text="AK PROJECTS"
+    android:textSize="15dp"
+    android:textStyle="italic"
+    android:textColorHighlight="#000"
+    android:layout_marginTop="100dp"
+    android:padding="40dp"/>
+
+
+
+
+</LinearLayout>
